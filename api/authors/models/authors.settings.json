@@ -32,8 +32,8 @@
       "pluginOptions": {}
     },
     "posts": {
-      "collection": "posts",
-      "via": "author"
+      "via": "author",
+      "collection": "posts"
     },
     "projects": {
       "via": "author",

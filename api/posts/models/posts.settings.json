@@ -35,9 +35,6 @@
       "required": true,
       "pluginOptions": {}
     },
-    "tags": {
-      "type": "json"
-    },
     "slug": {
       "type": "uid",
       "required": false,
@@ -51,6 +48,10 @@
     "author": {
       "via": "posts",
       "model": "authors"
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tags"
     }
   }
 }
