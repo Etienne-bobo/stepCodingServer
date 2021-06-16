@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
         host: env('DATABASE_HOST'),
         srv: true,
         port: null,
-        database: 'stepcoding-cms',
+        uri: env('DATABASE_URI'),
         username: env('DATABASE_USERNAME', null),
         password: env('DATABASE_PASSWORD', null),
       },
