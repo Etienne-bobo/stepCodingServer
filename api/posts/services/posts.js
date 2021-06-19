@@ -6,14 +6,14 @@
  */
 
 module.exports = {
-    async findOne(params, populate) {
+  async findOne(params, populate) {
 
-        const [fr, en] = await Promise.all(
-            [
-                strapi.query("posts").findOne({slug: params.id}, populate),
-            ]
-        );
+    const [fr, en] = await Promise.all(
+      [
+        strapi.query('posts').findOne({slug: params.id}, populate),
+      ]
+    );
 
-        return fr ? fr : en;
-    },
+    return fr ? fr : en;
+  },
 };

@@ -25,8 +25,8 @@
       "required": true
     },
     "author": {
-      "model": "authors",
-      "via": "projects"
+      "via": "projects",
+      "model": "authors"
     }
   }
 }

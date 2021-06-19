@@ -38,6 +38,14 @@
     "projects": {
       "via": "author",
       "collection": "projects"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "Lindedin": {
+      "type": "string",
+      "required": true
     }
   }
 }

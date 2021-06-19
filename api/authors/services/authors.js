@@ -5,4 +5,15 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+  async findOne(params, populate) {
+
+    const [fr, en] = await Promise.all(
+      [
+        strapi.query('authors').findOne({slug: params.id}, populate),
+      ]
+    );
+    
+    return fr ? fr : en;
+  }
+};
