@@ -18,8 +18,8 @@ module.exports = ({ env }) => ({
       host: env('MAILGUN_HOST', 'api.mailgun.net'), //Optional. If domain region is Europe use 'api.eu.mailgun.net'
     },
     settings: {
-      defaultFrom: 'myemail@protonmail.com',
-      defaultReplyTo: 'myemail@protonmail.com',
+      defaultFrom: 'etiennebobo17@gmail.com',
+      defaultReplyTo: 'etiennebobo17@gmail.com',
     },
   },
 });
